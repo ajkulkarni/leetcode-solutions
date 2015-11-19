@@ -1,3 +1,8 @@
+/**
+ *
+ * @author Ajay
+ */
+
 public class Solution {
     public int singleNumber(int[] nums) {
 
