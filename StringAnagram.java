@@ -26,17 +26,17 @@ public class StringAnagram {
     
     public static void anagram(char[] a, int pos, char[] output)
     {
-        if(pos == a.length-1)
+        if(pos == output.length-1)
         {
-            String s =  new String(output) + new String(a);
-            System.out.println(s);
+            output[pos] = a[0];
+            System.out.println(Arrays.toString(output));
             return;
         }
         
         for (int i = 0; i < a.length; i++)
         {
             output[pos] = a[i];
-            char[] new_a = new  char[a.length - pos+1];
+            char[] new_a = new  char[output.length - (pos+1)];
             int k = 0;
             
             for (int j = 0; j < a.length; j++)
